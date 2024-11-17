@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael N'u Jones - Portofolio</title>
+    <meta name="description" content="Portofolio Michael N'u Jones, seorang desainer multimedia dengan pengalaman dalam desain grafis, pengembangan web, dan penghargaan bulutangkis.">
+    <meta name="keywords" content="Michael N'u Jones, desainer multimedia, portofolio, bulutangkis, SMK MULTICOMP, desain grafis, MNJDEV">
+    <meta name="author" content="Michael N'u Jones">
+    <meta property="og:title" content="Michael N'u Jones - Portofolio">
+    <meta property="og:description" content="Profil dan karya Michael N'u Jones, seorang desainer multimedia dan pengembang web.">
+    <meta property="og:image" content="foto.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-header">
+            <div class="profile-image-wrapper">
+                <img src="foto.jpg" alt="Foto Michael N'u Jones, desainer multimedia" class="profile-image" id="profileImage">
+            </div>
+            <div class="navigation">
+                <button onclick="prevImage()">&#10094;</button>
+                <button onclick="nextImage()">&#10095;</button>
+            </div>
+            <h1>Michael N'u Jones</h1>
+            <p class="occupation">MNJDEV</p>
+        </div>
+        <div class="biography">
+            <h2>Biografi</h2>
+            <p><strong>Nama:</strong> Michael N'u Jones</p>
+            <p><strong>Tanggal Lahir:</strong> 16 November 2008</p>
+            <p><strong>Tempat Lahir:</strong> Jakarta, Indonesia</p>
+            <h2>Pencapaian</h2>
+            <ul>
+                <li>Menerima penghargaan 'Bulutangkis' pada tahun 2021-2022 di MTSn.</li>
+            </ul>
+            <h2>Kehidupan Pribadi</h2>
+            <p>Michael N'u Jones bersekolah di SDN 2 OGAN KOMERING ILIR, MTSN OGAN 2 KOMERING ILIR, dan SMK MULTICOMP jurusan Multimedia.</p>
+        </div>
+        <div class="social-media">
+            <h2>Social Media</h2>
+            <a href="https://www.instagram.com/zxmic_dog?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+        </div>
+        <div class="footer">
+            <p>by Michael N'u Jones</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+    <!-- Skrip untuk mengatur og:url secara dinamis -->
+    <script>
+        document.querySelector('meta[property="og:url"]').setAttribute('content', window.location.href);
+    </script>
+
+    <!-- Struktur Data JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Michael N'u Jones",
+        "jobTitle": "Desainer Multimedia",
+        "image": "foto.jpg",
+        "url": window.location.href,
+        "description": "Portofolio Michael N'u Jones, desainer multimedia.",
+        "birthDate": "2008-11-16",
+        "birthPlace": {
+            "@type": "Place",
+            "name": "Jakarta, Indonesia"
+        }
+    }
+    </script>
+</body>
+</html>
